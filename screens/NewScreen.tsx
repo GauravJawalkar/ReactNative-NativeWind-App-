@@ -1,6 +1,6 @@
 import React from 'react'
 import { Alert, Pressable, SafeAreaView, Text, ToastAndroid, useColorScheme, View } from 'react-native'
-import '../global.css'
+import FlatCard from '../components/FlatCard'
 
 const NewScreen = () => {
     return (
@@ -28,6 +28,7 @@ const NewScreen = () => {
                         click me native
                     </Text>
                 </Pressable>
+                <FlatCard />
             </View >
         </>
     )
