@@ -6,37 +6,41 @@ const FlatCard = () => {
         {
             id: 1,
             text: "Red",
-            color: "red"
+            color: "bg-red-400"
         },
         {
             id: 2,
             text: "Blue",
-            color: "blue"
+            color: "bg-blue-400"
         },
         {
             id: 3,
             text: "Green",
-            color: "green"
+            color: "bg-green-400"
         },
         {
             id: 4,
             text: "Yellow",
-            color: "amber"
+            color: "bg-amber-400"
         },
     ]
     return (
-        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-            {
-                colorCards.map(({ id, text, color }) => {
-                    return (
-                        <View key={id} className={`h-[100] w-[100] border rounded-full ${`bg-${color}-400`} flex-1 items-center justify-center m-2`}>
-                            <Text className='text-white'>{text}</Text>
-                        </View>
-                    )
-                })
-            }
-
-        </ScrollView >
+        <>
+            <Text className='text-xl font-bold font-mono'>
+                Scrollable Card
+            </Text>
+            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+                {
+                    colorCards.map(({ id, text, color }) => {
+                        return (
+                            <View key={id} className={`h-[100] w-[100] border rounded-full ${color} flex-1 items-center justify-center m-2`}>
+                                <Text className='text-white'>{text}</Text>
+                            </View>
+                        )
+                    })
+                }
+            </ScrollView >
+        </>
     )
 }
 
