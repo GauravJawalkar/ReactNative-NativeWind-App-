@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@react-native/new-app-screen": "0.80.2",
+    "lucide-react-native": "^0.539.0",
     "nativewind": "^4.1.23",
     "react": "19.1.0",
     "react-native": "0.80.2",
+    "react-native-svg": "^15.12.1",
     "react-native-worklets": "^0.4.1"
   },
   "devDependencies": {

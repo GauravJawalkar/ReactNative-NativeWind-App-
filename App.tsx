@@ -1,16 +1,16 @@
-import { Pressable, ScrollView, Text, View } from "react-native";
+import { ScrollView } from "react-native";
 import { SafeAreaView } from "react-native";
-import FlatCard from "./components/FlatCard";
-import ImagesCard from "./components/ImagesCard";
+import FlatCard from "./src/components/FlatCard";
+import ImagesCard from "./src/components/ImagesCard";
+import ContactList from "./src/components/ContactList";
 
 export default function App() {
   return (
-    <SafeAreaView>
-      <ScrollView horizontal={false}>
-        <View className="dark:bg-neutral-800 px-2">
-          <FlatCard />
-          <ImagesCard />
-        </View>
+    <SafeAreaView className="flex-1 dark:bg-neutral-800">
+      <ScrollView horizontal={false} className="dark:bg-neutral-800 ">
+        <FlatCard />
+        <ImagesCard />
+        <ContactList />
       </ScrollView>
     </SafeAreaView>
   );

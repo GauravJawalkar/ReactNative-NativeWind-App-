@@ -1,4 +1,4 @@
-import { View, Text, Button, ScrollView } from 'react-native'
+import { View, Text, Button, ScrollView, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 
 const FlatCard = () => {
@@ -25,7 +25,7 @@ const FlatCard = () => {
         },
     ]
     return (
-        <>
+        <View>
             <Text className='text-xl font-bold font-mono'>
                 Scrollable Card
             </Text>
@@ -40,7 +40,7 @@ const FlatCard = () => {
                     })
                 }
             </ScrollView >
-        </>
+        </View>
     )
 }
 
